@@ -14,8 +14,8 @@ RUN apt-get update && \
     apt-get install -y wget
 
 # JC install
-apt-get install -y vim
-apt-get install -y lsof
+RUN apt-get install -y vim
+RUN apt-get install -y lsof
 
 # JC install java 8
 #
