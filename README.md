@@ -1,3 +1,10 @@
+
+# **gremlin upgrades
+
+- Added bunch of files to plugins.
+- Added neo4j-server.properties file with this line: 
+org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp
+
 # Neo4j Community Edition 2.2.3
 
 This repository contains a Docker image of the latest version (2.2.3) of the [Neo4j community server](http://www.neo4j.com/download). This Docker image of Neo4j provides instructions on how to map a Docker data volume to an already existing `data/graph.db` store file located on your host machine.
