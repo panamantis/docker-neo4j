@@ -1,6 +1,0 @@
-#No auth:
-#Accept any
-# gremlin:
-#JC# org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp
-dbms.security.auth_enabled=false
-org.neo4j.server.webserver.address=0.0.0.0
