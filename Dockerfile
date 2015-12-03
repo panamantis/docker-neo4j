@@ -26,9 +26,11 @@ RUN apt-get update -y
 RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 RUN apt-get -y install oracle-java8-installer && apt-get clean
 
+
+# **Note: "exec format error" related to bad devmapper, consider switching to BTRFS
 # JC install maven
 #exec format error?#RUN apt-get install -y git
-RUN apt-get install -y maven
+#RUN apt-get install -y maven
 #ENV MAVEN_HOME /usr/share/maven
 
 
