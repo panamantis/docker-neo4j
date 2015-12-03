@@ -29,8 +29,8 @@ RUN apt-get -y install oracle-java8-installer && apt-get clean
 
 # **Note: "exec format error" related to bad devmapper, consider switching to BTRFS
 # JC install maven
-#exec format error?#RUN apt-get install -y git
-#RUN apt-get install -y maven
+RUN apt-get install -y git
+RUN apt-get install -y maven
 #ENV MAVEN_HOME /usr/share/maven
 
 
