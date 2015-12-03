@@ -27,7 +27,9 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 RUN apt-get -y install oracle-java8-installer && apt-get clean
 
 # JC install maven
-run apt-get install -y git maven
+RUN apt-get install -y git
+RUN apt-get install -y maven
+#ENV MAVEN_HOME /usr/share/maven
 
 
 RUN wget -q -O /tmp/neo4j-$NEO4j_VERSION-unix.tar.gz http://dist.neo4j.org/neo4j-$NEO4j_VERSION-unix.tar.gz && \

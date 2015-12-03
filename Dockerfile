@@ -27,7 +27,7 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 RUN apt-get -y install oracle-java8-installer && apt-get clean
 
 # JC install maven
-RUN apt-get install -y git
+#exec format error?#RUN apt-get install -y git
 RUN apt-get install -y maven
 #ENV MAVEN_HOME /usr/share/maven
 
